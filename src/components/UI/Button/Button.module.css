@@ -1,0 +1,100 @@
+.Button {
+  font-size: 1em;
+  font-weight: var(--w-medium);
+  padding-left: 2.6375em;
+  padding-right: 2.6375em;
+  border-radius: 0.25em;
+  background-color: transparent;
+  transition: 250ms all;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+}
+
+/* SIZES =========================== */
+
+.Button.large {
+  padding-top: 1.225em;
+  padding-bottom: 1.225em;
+}
+
+.Button.medium {
+  padding-top: 0.975em;
+  padding-bottom: 0.975em;
+}
+
+.Button.small {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+/* COLORS ================= */
+
+.Button.green {
+  border: 2px solid var(--primary-3);
+  background-color: var(--primary-3);
+  color: #fff;
+}
+
+.Button.blue {
+  border: 2px solid var(--blue-3);
+  background-color: var(--blue-3);
+  color: #fff;
+}
+
+.Button.red {
+  border: 2px solid var(--red-2);
+  background-color: var(--red-2);
+  color: #fff;
+}
+
+.Button.orange {
+  border: 2px solid var(--orange-3);
+  background-color: var(--orange-3);
+  color: #fff;
+}
+
+.Button.dark {
+  border: 2px solid var(--gray-2);
+  background-color: var(--gray-2);
+  color: #fff;
+}
+
+.Button.light {
+  border: 2px solid var(--gray-3);
+  background-color: var(--gray-3);
+  color: var(--gray-2);
+}
+
+.Button.blue:hover,
+.Button.green:hover,
+.Button.red:hover,
+.Button.orange:hover,
+.Button.dark:hover,
+.Button.light:hover {
+  background-color: transparent;
+}
+
+.Button.blue:hover {
+  color: var(--blue-3);
+}
+
+.Button.green:hover {
+  color: var(--primary-3);
+}
+
+.Button.red:hover {
+  color: var(--red-2);
+}
+
+.Button.orange:hover {
+  color: var(--orange-3);
+}
+
+.Button.dark:hover {
+  color: var(--gray-2);
+}
+
+.Button.light:hover {
+  color: var(--gray-2);
+}

@@ -1,0 +1,51 @@
+.Alert {
+  position: fixed;
+  top: -100%;
+  z-index: 100;
+  width: 80%;
+  left: 10%;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 3px;
+  padding: 2em 3.125em;
+  transition: 300ms all;
+}
+
+.Alert.opened {
+  top: 0;
+}
+
+.Alert h3 {
+  font-size: 1em;
+}
+
+.Alert p {
+  font-size: 0.875em;
+}
+
+.Alert.success {
+  background-color: #f4fbf7;
+  color: var(--primary-3);
+}
+
+.Alert.error {
+  background-color: #fef5f3;
+  color: var(--red-2);
+}
+
+.Alert.warning {
+  background-color: var(--orange-5);
+  color: var(--orange-1);
+}
+
+.Alert div {
+  margin-left: 3.125em;
+}
+
+.close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  cursor: pointer;
+  padding: 0.5em;
+}

@@ -1,0 +1,64 @@
+.TextField {
+  border-radius: 4px;
+  border: 2px solid #ceced4;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 0.875em;
+  width: 20em;
+  color: var(--gray-2);
+}
+
+.TextField label {
+  position: absolute;
+  pointer-events: none;
+  font-weight: var(--w-medium);
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 1.06em;
+  transition: 300ms all;
+}
+
+.TextField input {
+  color: var(--gray-2);
+  font-weight: var(--w-medium);
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 1.06em;
+}
+
+.TextField.activeborder {
+  border-color: var(--gray-2);
+}
+
+.TextField.active label {
+  top: -2.6em;
+  font-size: 0.8em;
+}
+
+.TextField input {
+  padding-bottom: 1em;
+}
+
+.TextField img {
+  position: absolute;
+  right: 0;
+  display: flex;
+  height: 37%;
+  top: 31.5%;
+  right: 1.3em;
+  cursor: pointer;
+  transition: 200ms all;
+}
+
+.TextField img:hover {
+  opacity: 0.6;
+}
+
+.TextField img:active {
+  transform: scale(0.8);
+}

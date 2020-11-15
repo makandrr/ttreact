@@ -1,0 +1,33 @@
+.Radio {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.Radio input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.Radio input + label {
+  display: inline-block;
+  border-radius: 100%;
+  background-color: var(--gray-3);
+  padding: 0.4em;
+  transition: 300ms all;
+  border: 0.5em solid var(--gray-3);
+}
+
+.Radio input:checked + label {
+  background-color: var(--primary-3);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.Radio span {
+  font-weight: var(--w-medium);
+  font-size: 0.875em;
+  color: var(--gray-2);
+  margin-left: 0.9375em;
+}

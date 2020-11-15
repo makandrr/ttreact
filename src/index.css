@@ -1,13 +1,103 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+html {
+  /* =================================================== */
+  /* =======================COLORS====================== */
+  /* =================================================== */
+
+  /* SHADES OF GRAY ================================= */
+  --gray-1: #070623;
+  --gray-2: #3b3a52;
+  --gray-3: #e8e8ec;
+  --gray-4: #f2f2f5;
+  --gray-5: #f6f6f9;
+
+  /* PRIMARY COLORS ================================== */
+  --primary-1: #008436;
+  --primary-2: #21a657;
+  --primary-3: #4cb677;
+  --primary-4: #8ed5ab;
+  --primary-5: #e3f0e9;
+
+  /* BLUE COLORS ===================================== */
+  --blue-1: #055374;
+  --blue-2: #227091;
+  --blue-3: #47859f;
+  --blue-4: #89b5c8;
+  --blue-5: #e0e8ec;
+
+  /* ORANGE COLORS ==================================== */
+  --orange-1: #b86100;
+  --orange-2: #e78f2e;
+  --orange-3: #fdb86a;
+  --orange-4: #ffd7aa;
+  --orange-5: #fff9f1;
+
+  /* RED COLORS ====================================== */
+  --red-1: #b82300;
+  --red-2: #e7512e;
+  --red-3: #fd866a;
+  --red-4: #ffbaaa;
+  --red-5: #fff4f1;
+
+  /* TEXT */
+  --w-regular: 400;
+  --w-medium: 500;
+  --w-semibold: 600;
+  --w-bold: 700;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #3b3a52;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.75em;
+}
+
+h6 {
+  font-size: 1.375em;
+}
+
+a {
+  color: #47859f;
+}
+
+p {
+  line-height: 2em;
 }

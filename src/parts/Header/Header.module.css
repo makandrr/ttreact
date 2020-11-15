@@ -1,0 +1,45 @@
+.Header {
+  background-image: url(hero.png);
+  padding: 0.4em 0;
+}
+
+.Header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header h1 img {
+  width: 3em;
+}
+
+.Header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.Header ul a {
+  text-decoration: none;
+  align-items: center;
+  font-weight: var(--w-semibold);
+  font-size: 0.75em;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.7em 1em;
+}
+
+.Header ul a.active {
+  color: var(--primary-3);
+}
+
+.Header ul li + li {
+  margin-left: 1.5em;
+}
+
+.Header ul a:hover {
+  opacity: 0.7;
+}
+
+.Header ul a.active:hover {
+  opacity: 1;
+}
