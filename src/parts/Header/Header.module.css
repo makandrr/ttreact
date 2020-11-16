@@ -45,3 +45,20 @@
 .Header ul a.active:hover {
   opacity: 1;
 }
+
+.mainPageStyle {
+  background-image: url(hero.png);
+  height: 100vh;
+}
+
+.mainPageStyle ul a {
+  color: var(--gray-4);
+}
+
+.mainPageStyle h2 {
+  color: var(--gray-4);
+  font-weight: var(--w-semibold);
+  max-width: 800px;
+  font-size: 3.5em;
+  margin-top: 2em;
+}

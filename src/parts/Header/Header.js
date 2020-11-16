@@ -45,8 +45,12 @@ class Header extends Component {
     });
   };
   render() {
+    const cls = [
+      classes.Header,
+      this.props.mainPage ? classes.mainPageStyle : '',
+    ];
     return (
-      <header className={classes.Header}>
+      <header className={cls.join(' ')}>
         <div className={'container ' + classes.container}>
           <h1>
             <img src={logo} alt="Логотип" />
@@ -61,6 +65,11 @@ class Header extends Component {
           </ul>
           <Button size="medium">Подключиться</Button>
         </div>
+        {this.props.mainPage ? (
+          <div className="container">
+            <h2>We empower power wower dower</h2>
+          </div>
+        ) : null}
       </header>
     );
   }
