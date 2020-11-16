@@ -36,12 +36,8 @@ class Header extends Component {
   renderLinks = () => {
     return this.state.links.map((link, index) => {
       return (
-        <li>
-          <a
-            className={link.active ? classes.active : ''}
-            href={link.to}
-            key={index}
-          >
+        <li key={index}>
+          <a className={link.active ? classes.active : ''} href={link.to}>
             {link.label}
           </a>
         </li>

@@ -1,0 +1,38 @@
+.Main {
+  padding-bottom: 20em;
+}
+
+.Main .hero {
+  padding-top: 10em;
+  padding-bottom: 20em;
+  box-shadow: inset 0 0 3em 10em #fff;
+  background-image: url(hero3.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.Main .hero h1 {
+  max-width: 75%;
+  color: var(--gray-2);
+  font-weight: var(--w-semibold);
+  z-index: 5;
+}
+
+.Main .hero > div {
+  display: flex;
+}
+
+.Main .hero canvas {
+  position: absolute;
+}
+/* 
+.Main .hero canvas:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  height: 100%;
+  background-color: #000;
+  width: 10px;
+} */
